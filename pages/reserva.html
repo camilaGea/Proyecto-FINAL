@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <title>OLIMPO</title>
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+            <a href="../index.html"><img src="../img/hotel.jpeg" alt="logo"></a>
+        </div>
+        <label for="menu" class="mostrar__menu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu">
+        <nav class="navegador__menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="habitaciones.html">Habitaciones</a></li>
+                <li><a href="restaurante.html">Restaurante & Bar</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+            </ul>
+            <label for="menu" class="cerrar__menu">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </label>
+        </nav>
+    </header>
+    <main>
+        <div class="reserva__formulario">
+            <h3 class="titulo__reserva">Reserva</h3>
+            <form action="" class="formulario__reserva">
+            
+                <label for="llegada" class="formu__label">Llegada</label>
+                <input type="datetime-local" name="fechallegada" required class="formu__input">
+                
+            
+                <label for="salida" class="formu__label">Salida</label>
+                <input type="datetime-local" name="fechasalida" required class="formu__input">
+                
+                    
+            
+                <label for="habitaciones" class="formu__label"> Tipo de Habitacion</label>
+                <select name="habitaciones" class="formu__input">
+                    <option value="select">Seleccionar</option>
+                    <option value="hab_1">Habitacion Olimpo</option>
+                    <option value="hab_2">Habitacion Suite</option>
+                    <option value="hab_3">Habitacion Clasica</option>
+                    <option value="hab_4">Habitacion Superior</option>
+                    <option value="hab_5">Habitacion Junior</option>
+                </select>
+                
+                    
+            
+                <label for="adultos" class="formu__label">Cantidad de huéspedes</label>
+                <input type="number" min="1" max="20" class="formu__input">
+                
+    
+            
+                <label for="menores" class="formu__label">Menores</label>
+                <input type="number" min="0" max="10" class="formu__input">
+                
+                <button type="submit" class="formu__boton"> Enviar </button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p> Hotel Olimpo</p>
+        <p> Argentina Cordoba Capital 1234 </p>
+        <div class="footer__redes"> 
+            <a href="https://facebook.com" target="_black"><img src="../img/facebook.png" alt="facebook"></a>
+            <a href="https://whatsapp.com" target="_black" ><img src="../img/whatsapp.png" alt="whatsapp"></a>
+            <a href="https://instagram.com" target="_black" ><img src="../img/instagram.png" alt="instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
