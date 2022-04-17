@@ -2,31 +2,36 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-family: 'Nunito', sans-serif;
 }
 
 /* header */
 
 header {
-    background-color: #f4f5ef;
+    background-color: #43746f;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
     position: sticky;
     top: 0;
-    /* left: 0; */
     z-index: 999;
 }
 
 header .header__logo {
-    height: 6.5rem;
-    width: 6.5rem;
+    height: 7rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header .header__logo img {
-    width: 100%;
+header .header__logo a {
+    padding: 5px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    font-family:'Monoton', cursive;
 }
 
 header .mostrar__menu {
@@ -36,8 +41,8 @@ header .mostrar__menu {
     width: 2.5rem;
     height: 2.5rem;
     font-size: 2rem;
-    background-color: white;
-    color: rgb(67, 134, 112);
+    background-color: #6b8f8b;
+    color: white;
     cursor: pointer;
     border: none;
 }
@@ -85,10 +90,6 @@ header .navegador__menu ul li {
     border-radius: 7px;
 }
 
-header .navegador__menu ul li:hover {
-    background-color: #6b8f8b;
-}
-
 header .navegador__menu ul li a {
     text-decoration: none;
     color: white;
@@ -96,8 +97,12 @@ header .navegador__menu ul li a {
 }
 
 
-@media screen and (min-width:770px) {
+@media screen and (min-width:780px) {
     
+    header {
+        height: 7rem;
+    }
+
     header .mostrar__menu {
         display: none;
     }
@@ -110,16 +115,24 @@ header .navegador__menu ul li a {
         display: flex;
         position: inherit;
         padding-left: 80px;
-        background-color: #f4f5ef;
+        background-color: #43746f;
+        width: 90%;
+        height: 90%;
     }
 
     header .navegador__menu ul {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     header .navegador__menu ul li a {
-        color: #40514F;
+        color: black;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    header .navegador__menu ul li a:hover {
+        background-color: #6b8f8b;
+        color: white;
     }
 }
 
@@ -128,8 +141,7 @@ header .navegador__menu ul li a {
 
 footer {
     height: 10rem;
-    background-color: #f1f3e8;
-    /* background-color: #6b8f8b; */
+    background-color: #43746f;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -141,7 +153,6 @@ footer p {
     padding: 5px;
     text-transform: uppercase;
     font-weight: 700;
-
 }
 
 footer .footer__redes {
@@ -151,19 +162,28 @@ footer .footer__redes {
 }
 
 footer .footer__redes a {
-    width: 2rem;
-    height: 2rem;
-    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    color: black;
     border-radius: 20%;
+    border-radius: 50%;
+    transition: all 0.5s ;
 }
 
 footer .footer__redes a:hover {
-    color: rgb(33, 59, 33);
-    /* background-color: white; */
+    color: white;
+    background-color: #6b8f8b;
+    transform: scale(1.1);
 }
 
 @media screen and (min-width:900px) {
     footer {
+        height: 5rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -190,22 +210,30 @@ footer .footer__redes a:hover {
     align-items: center;
 }
 
+@keyframes animacionh1 {
+    0% { left: -100%;}
+    100% {left: 0;}
+}
+
 .home__contenedora .home__presentacion h1 {
     font-size: 3rem;
     text-align: center;
     color: white;
     text-transform: uppercase;
     width: 100%;
-    
+    position: relative;
+    animation-name: animacionh1;
+    animation-duration: 2s;
 }
 
 /* Nosotros */
 
 .nosotros__uno {
-    background-color: #6b8f8b;
     width: 90%;
     margin: 1rem auto;
     align-items: center;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px #6b8f8b;
 }
 
 .nosotros__nosotros {
@@ -231,12 +259,13 @@ footer .footer__redes a:hover {
 }
 
 .nosotros__dos {
-    background-color: #6b8f8b;
     width: 90%;
     margin: 4rem auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px #6b8f8b ;
 }
 
 
@@ -253,6 +282,9 @@ footer .footer__redes a:hover {
     width: 100%;
 }
 
+.nosotros__img .texto__nosotros {
+    display: none;
+}
 
 
 @media screen and (min-width:900px) {
@@ -277,186 +309,71 @@ footer .footer__redes a:hover {
 
    .nosotros__dos {
        flex-direction: row;
+       justify-content: center;
    }
+
+   .nosotros__dos .nosotros__img {
+    position: relative;
+    height: 250px;
+    width: 350px;
+}
 }
 
 
 /* habitaciones */
-
-.habitaciones__titulo {
-    text-align: center
-}
-
-.habitaciones__titulo h3{
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: 10px;
-}
-
-.habitaciones__titulo p{
-    font-size: 15px;
-    padding: 5px;
-}
-
-
-.habitaciones {
-    min-height: 100vh;
-}
-
-
-.habitacion {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-        "imagen"
-        "descripcion";
-    margin: 1rem;
-    background-color: #6b8f8b;
-}
-
-.habitacion__img {
-    grid-area: imagen;
-    width: 90%;
-    height: 90%;
-    margin: auto;
+.hab__texto {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 10px 0;
+    align-items: center;
 }
 
-.habitacion__img img {
-    width: 100%;
-    height: 100%;
+.hab__texto h3 {
+    color: #177166;
+    font-size: 50px;
 }
 
-.habitacion__texto {
-    grid-area: descripcion;
-    margin: auto;
-    display: grid;
-    text-align: center;
-    
-    padding: 1rem;
+@keyframes animacionhab {
+    0% { left: -100%;}
+    100% {left: 0;}
 }
 
-.habitacion__texto p {
-    font-size: 0.7em;
+@keyframes animacionder {
+    0% { right: -100%;}
+    100% {right: 0;}
 }
 
-.habitacion__texto h3 {
-    font-size: 0.9em;
-    margin-bottom:10px;
+.habitacion__izquierda {
+    position: relative;
+    animation-name: animacionhab;
+    animation-duration: 3s;
 }
 
 
-@media screen and  (min-width:770px) {
-    .habitacion {
-        grid-template-columns: 60% 40%;
-        grid-template-rows: 30vw;
-        grid-template-areas: 
-            "imagen descripcion";
-    }
-
-    .habitaciones__titulo h3{
-        font-size: 40px;
-    }
-    
-    .habitaciones__titulo p{
-        font-size: 20px;
-    }
-
-    .habitacion__texto p {
-        font-size: 15px;
-    }
-    
-    .habitacion__texto h3 {
-        font-size: 30px;
-    }
-    
+.habitacion__derecha {
+    position: relative;
+    animation-name: animacionder;
+    animation-duration: 3s;
 }
 
+.img__habitaciones {
+    border-radius: 5px;
+}
 
 /* Restaurante */
 
-
-.restaurante {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.aumentar {
+    transition: transform 0.5s;
 }
 
-.contenedora__restaurante,
-.contenedora__bar {
-    display: grid;
-    text-align: center;
-    margin-bottom: 5px;
+.aumentar:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
-
-.contenedora__restaurante img,
-.contenedora__bar img {
-    width: 90%;
-}
-
-.restaurante__texto h3 {
-    margin: 5px;
-}
-
-.restaurante__texto p {
-    margin: 10px;
-}
-
-.restaurante__imagenes {
-    width: 70%;
-}
-.restaurante__imagenes img {
-    width: 100%;
-    margin: 20px;
-}
-
-.restaurante__imagenes img {
-    width: 90%;
-}
-
-.restaurante__imagenes {
-    width: 95%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}
-
-
-@media screen and (min-width:770px){
-    .restaurante__imagenes {
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 10px;
-    }   
-    
-    .restaurante {
-        display: flex;
-        flex-direction: row;
-        /* justify-content: space-evenly; */
-        justify-content: center;
-        align-items: center;
-    }
-    .contenedora__restaurante,
-    .contenedora__bar {
-        margin: 2rem;
-        padding: 1rem;
-    }
-
-    .contenedora__restaurante img {
-        width: 75%;
-    }
-    .contenedora__bar img {
-        width: 100%;
-    }
-}
-
-
 
 /*        Reserva        */
 
 .reserva__formulario {
-    background-color: #f4f5ef;
     display: grid;
     min-height: 90vh;
     height: 100%;
@@ -482,7 +399,6 @@ footer .footer__redes a:hover {
     font-weight: 700;
     text-transform: uppercase;
     color: black;
-    /* text-shadow: black 0.1em 0 0.1em; */
 }
 
 .reserva__formulario .formulario__reserva{
@@ -503,20 +419,22 @@ footer .footer__redes a:hover {
 .formulario__reserva .formu__input {
     border: none;
     border-bottom: 2px solid #177166;
-    background-color: #f4f5ef;
 }
 
 .formulario__reserva .formu__boton {
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 1em;
     margin-top: 2vh;
     padding: 0.6vh;
     color: black;
     background-color: #177166;
     border-radius: 5px;
+    border: none;
+    text-align: center;
+    justify-self: center;
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:770px) {
     .reserva__formulario {
         grid-template-rows: 10vw auto;
     }
@@ -525,18 +443,21 @@ footer .footer__redes a:hover {
         font-size: 2.5em;
     }
 
+    .reserva__formulario .formulario__reserva {
+        width: 25rem;
+    }
+
     .formulario__reserva .formu__label {
         font-size: 1em;
     }
 
     .formulario__reserva .formu__boton {
         cursor: pointer;
+        width: 5rem;
     }
     
     .formulario__reserva  button:hover {
         background-color: #1771669c;
-    }
-    .formulario__reserva  button:focus {
         color: white;
     }
 
