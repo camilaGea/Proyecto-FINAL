@@ -221,9 +221,7 @@ main .home__servicios {
     flex-direction: row;
     padding: 50px 50px 50px 50px; }
     main .home__servicios .contenido__servicios .servicio {
-      margin: 0px 10px; }
-  main .carousel, main .carousel-inner > .carousel-item {
-    height: 500px; } }
+      margin: 0px 10px; } }
 
 /* NOSOTROS */
 main .texto__titulo {
