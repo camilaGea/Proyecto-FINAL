@@ -1,0 +1,46 @@
+/* RESTAURANTE */
+
+main {
+    .texto__titulo {
+        margin-top: 5px;
+        padding: 0 50px;
+        text-transform: uppercase;
+        text-align: center;
+        h3 {
+            font-size: 30px;
+            font-family: 'Bebas Neue', cursive;
+            border-bottom: 0.5rem solid #de0a26; 
+        }
+    }
+
+    .container {
+        .cont1{
+            .restaurante__texto1 {
+                border-bottom: 2px solid  red;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:900px){
+    main {
+        .texto__titulo {
+            h3 {
+                font-size: 45px;
+            }
+        }
+        .container {
+            .cont1{
+                .restaurante__texto1 {
+                    border-left: 2px solid  red;
+                    border-bottom: none;
+                }
+            }
+            .cont2{
+                .restaurante__texto2 {
+                    border-right: 2px solid red;
+                } 
+            }
+        }
+    }
+}
