@@ -3,14 +3,9 @@ main{
 
     .container {
         .texto__titulo {
-            margin-top: 5px;
-            padding: 0 50px;
-            text-transform: uppercase;
-            text-align: center;
-            h3 {
-                font-size: 40px;
-                font-family: 'Bebas Neue', cursive;
-                border-bottom: 0.5rem solid #de0a26; 
+            @include estilosCaja;
+            h1 {
+                @include estilosTitulo
             }
         }
     
@@ -70,8 +65,22 @@ main{
     main {
         .container{
             .texto__titulo {
-                h3 {
-                    font-size: 45px;
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+            .habitacion__izquierda{
+                .hab__texto {
+                    h3 {
+                        font-size: 40px;
+                    }
+                }
+            }
+            .habitacion__derecha {
+                .hab__texto {
+                    h3 {
+                        font-size: 40px;
+                    }
                 }
             }
         }

@@ -1,7 +1,7 @@
 /* HEADER */
 
 header {
-    background-color: white;
+    background-color: map-get($colores , colorS );
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,7 @@ header {
             padding: 5px;
             font-size: 1.5rem;
             text-decoration: none;
-            color: #de0a26;
+            color: map-get($colores,colorP );
             font-family:'Monoton', cursive;
         }
     }
@@ -34,8 +34,8 @@ header {
         width: 2.5rem;
         height: 2.5rem;
         font-size: 2rem;
-        background-color: #de0a26;
-        color: white;
+        background-color: map-get($colores, colorP );
+        color: map-get($colores, colorS);
         cursor: pointer;
         border: none;
 
@@ -58,7 +58,7 @@ header {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgb(209, 44, 44);
+        background-color:map-get($colores, colorT );
 
         ul {
             display: flex;
@@ -74,7 +74,7 @@ header {
 
                 a{
                     text-decoration: none;
-                    color: white;
+                    color: map-get($colores , colorS);
                     text-transform: uppercase;
                 }
             }
@@ -87,7 +87,7 @@ header {
             font-size: 1.5rem;
 
             i{
-                color: white;
+                color:map-get($colores , colorS);
             }
         }
     }
@@ -106,7 +106,7 @@ header {
             display: flex;
             position: inherit;
             padding-left: 80px;
-            background-color: white;
+            background-color: map-get($colores , colorS);
             width: 90%;
             height: 90%;
 
@@ -120,8 +120,8 @@ header {
                         border-radius: 5px;
                         padding: 5px;
                         &:hover {
-                            background-color: rgba(209, 44, 44, 0.863);
-                            color: white;
+                            background-color: map-get($colores , colorT);
+                            color: map-get($colores , colorS );
                         } 
                     }
                 }

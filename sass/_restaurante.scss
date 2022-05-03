@@ -2,21 +2,16 @@
 
 main {
     .texto__titulo {
-        margin-top: 5px;
-        padding: 0 50px;
-        text-transform: uppercase;
-        text-align: center;
-        h3 {
-            font-size: 30px;
-            font-family: 'Bebas Neue', cursive;
-            border-bottom: 0.5rem solid #de0a26; 
+        @include estilosCaja;
+        h1 {
+            @include estilosTitulo
         }
     }
 
     .container {
         .cont1{
             .restaurante__texto1 {
-                border-bottom: 2px solid  red;
+                border-bottom: 2px solid map-get($colores , colorT );
             }
         }
     }
@@ -25,20 +20,20 @@ main {
 @media screen and (min-width:900px){
     main {
         .texto__titulo {
-            h3 {
+            h1 {
                 font-size: 45px;
             }
         }
         .container {
             .cont1{
                 .restaurante__texto1 {
-                    border-left: 2px solid  red;
+                    border-left: 2px solid map-get($colores , colorT );
                     border-bottom: none;
                 }
             }
             .cont2{
                 .restaurante__texto2 {
-                    border-right: 2px solid red;
+                    border-right: 2px solid map-get($colores , colorT );
                 } 
             }
         }

@@ -94,7 +94,7 @@ header {
           border-radius: 5px;
           padding: 5px; }
           header .navegador__menu ul li a:hover {
-            background-color: rgba(209, 44, 44, 0.863);
+            background-color: #d12c2c;
             color: white; }
       header .navegador__menu .cerrar__menu {
         display: none; } }
@@ -147,7 +147,7 @@ footer {
 /* Index */
 main .home__presentacion {
   min-height: 90vh;
-  background: rgba(0, 0, 0, 0.411) url(../img/fon1.webp);
+  background: rgba(0, 0, 0, 0.411) url(../img/fon1.jpg);
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
@@ -184,12 +184,12 @@ main .home__bienvenido {
     justify-content: center;
     text-align: center; }
     main .home__bienvenido .contenido__bienvenido h3 {
-      color: rgba(209, 44, 44, 0.863); }
+      color: #d12c2c; }
 
 main .home__servicios {
   width: 100%;
   height: 100%;
-  background-color: rgba(209, 44, 44, 0.863); }
+  background-color: #d12c2c; }
   main .home__servicios .servicio__titulo {
     padding: 20px;
     height: 50px; }
@@ -199,7 +199,7 @@ main .home__servicios {
   main .home__servicios .contenido__servicios {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     text-align: center;
     padding: 40px 40px 0px 40px; }
@@ -208,9 +208,6 @@ main .home__servicios {
       main .home__servicios .contenido__servicios .servicio h3 {
         color: white;
         font-size: 20px; }
-      main .home__servicios .contenido__servicios .servicio p {
-        color: rgba(255, 255, 255, 0.55);
-        font-size: 15px; }
       main .home__servicios .contenido__servicios .servicio i {
         color: white;
         font-size: 50px;
@@ -227,10 +224,10 @@ main .home__servicios {
 main .texto__titulo {
   margin-top: 5px;
   padding: 0 50px;
-  text-transform: uppercase;
   text-align: center; }
-  main .texto__titulo h3 {
-    font-size: 40px;
+  main .texto__titulo h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
     font-family: 'Bebas Neue', cursive;
     border-bottom: 0.5rem solid #de0a26; }
 
@@ -253,7 +250,7 @@ main .nosotros__uno {
     border-radius: 10px; }
 
 @media screen and (min-width: 900px) {
-  main .texto__titulo h3 {
+  main .texto__titulo h1 {
     font-size: 3rem; }
   main .nosotros__uno {
     display: flex;
@@ -264,16 +261,17 @@ main .nosotros__uno {
       main .nosotros__uno .nosotros__texto p {
         font-size: 15px; }
     main .nosotros__uno .nosotros__imagenes {
+      width: 50%;
       height: 500px; } }
 
 /* HABITACIONES */
 main .container .texto__titulo {
   margin-top: 5px;
   padding: 0 50px;
-  text-transform: uppercase;
   text-align: center; }
-  main .container .texto__titulo h3 {
-    font-size: 40px;
+  main .container .texto__titulo h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
     font-family: 'Bebas Neue', cursive;
     border-bottom: 0.5rem solid #de0a26; }
 
@@ -320,31 +318,35 @@ main .container .habitacion__derecha {
       font-size: 50px; }
 
 @media screen and (min-width: 900px) {
-  main .container .texto__titulo h3 {
-    font-size: 45px; } }
+  main .container .texto__titulo h1 {
+    font-size: 3rem; }
+  main .container .habitacion__izquierda .hab__texto h3 {
+    font-size: 40px; }
+  main .container .habitacion__derecha .hab__texto h3 {
+    font-size: 40px; } }
 
 /* RESTAURANTE */
 main .texto__titulo {
   margin-top: 5px;
   padding: 0 50px;
-  text-transform: uppercase;
   text-align: center; }
-  main .texto__titulo h3 {
-    font-size: 30px;
+  main .texto__titulo h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
     font-family: 'Bebas Neue', cursive;
     border-bottom: 0.5rem solid #de0a26; }
 
 main .container .cont1 .restaurante__texto1 {
-  border-bottom: 2px solid  red; }
+  border-bottom: 2px solid #d12c2c; }
 
 @media screen and (min-width: 900px) {
-  main .texto__titulo h3 {
+  main .texto__titulo h1 {
     font-size: 45px; }
   main .container .cont1 .restaurante__texto1 {
-    border-left: 2px solid  red;
+    border-left: 2px solid #d12c2c;
     border-bottom: none; }
   main .container .cont2 .restaurante__texto2 {
-    border-right: 2px solid red; } }
+    border-right: 2px solid #d12c2c; } }
 
 /* RESERVA */
 main .reserva__formulario {
@@ -354,10 +356,10 @@ main .reserva__formulario {
   main .reserva__formulario .titulo__reserva {
     margin-top: 5px;
     padding: 0 50px;
-    text-transform: uppercase;
     text-align: center; }
-    main .reserva__formulario .titulo__reserva h3 {
-      font-size: 3rem;
+    main .reserva__formulario .titulo__reserva h1 {
+      text-transform: uppercase;
+      font-size: 2.5rem;
       font-family: 'Bebas Neue', cursive;
       border-bottom: 0.5rem solid #de0a26; }
   main .reserva__formulario .formulario__reserva {
@@ -376,31 +378,38 @@ main .reserva__formulario {
       border-radius: 20px;
       padding: 7px;
       margin-top: 5px; }
-    main .reserva__formulario .formulario__reserva .formu__boton {
-      text-transform: uppercase;
-      font-size: 1em;
-      margin-top: 2vh;
-      padding: 0.6vh;
-      color: white;
-      background-color: #de0a26;
-      border-radius: 5px;
-      border: none;
-      text-align: center;
-      justify-self: center; }
+    main .reserva__formulario .formulario__reserva .botones {
+      margin: 5px;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      main .reserva__formulario .formulario__reserva .botones .btn, main .reserva__formulario .formulario__reserva .botones .boton__limpiar {
+        text-transform: uppercase;
+        font-size: 1em;
+        margin-top: 2vh;
+        padding: 0.6vh;
+        text-align: center;
+        justify-self: center;
+        border-radius: 5px;
+        color: white;
+        background-color: #de0a26; }
+      main .reserva__formulario .formulario__reserva .botones .boton__limpiar {
+        color: #de0a26;
+        background-color: white;
+        border-color: #de0a26; }
 
 @media screen and (min-width: 900px) {
   main .reserva__formulario .titulo__reserva {
-    font-size: 2.5em; }
+    font-size: 3rem; }
   main .reserva__formulario .formulario__reserva .formu__label {
     font-size: 1em; }
   main .reserva__formulario .formulario__reserva .formu__input {
     width: 400px; }
-  main .reserva__formulario .formulario__reserva .formu__boton {
+  main .reserva__formulario .formulario__reserva .botones .btn, main .reserva__formulario .formulario__reserva .botones .boton__limpiar {
     cursor: pointer;
-    width: 5rem;
-    transition: all 30s; }
-    main .reserva__formulario .formulario__reserva .formu__boton:hover {
-      background-color: rgba(209, 44, 44, 0.863);
-      color: black;
-      animation: wobble;
-      animation-duration: 5s; } }
+    width: 5rem; }
+    main .reserva__formulario .formulario__reserva .botones .btn:hover, main .reserva__formulario .formulario__reserva .botones .boton__limpiar:hover {
+      background-color: white;
+      color: #de0a26;
+      border-color: #de0a26; } }

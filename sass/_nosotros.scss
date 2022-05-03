@@ -2,14 +2,9 @@
 
 main {
     .texto__titulo {
-        margin-top: 5px;
-        padding: 0 50px;
-        text-transform: uppercase;
-        text-align: center;
-        h3 {
-            font-size: 40px;
-            font-family: 'Bebas Neue', cursive;
-            border-bottom: 0.5rem solid #de0a26; 
+        @include estilosCaja;
+        h1 {
+            @include estilosTitulo; 
         }
     }
     .nosotros__uno {
@@ -43,7 +38,7 @@ main {
     main{
 
         .texto__titulo{
-            h3 {
+            h1 {
                 font-size: 3rem;
             }
         }
@@ -61,6 +56,7 @@ main {
             }
 
             .nosotros__imagenes {
+                width: 50%;
                 height: 500px;
             }
         } 
