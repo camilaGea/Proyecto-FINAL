@@ -7,7 +7,6 @@ main {
             @include estilosTitulo
         }
     }
-
     .container {
         .cont1{
             .restaurante__texto1 {
@@ -17,7 +16,7 @@ main {
     }
 }
 
-@media screen and (min-width:900px){
+@media screen and (min-width:992px){
     main {
         .texto__titulo {
             h1 {

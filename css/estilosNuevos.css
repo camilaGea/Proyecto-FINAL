@@ -294,7 +294,7 @@ main .container .habitacion__izquierda {
     align-items: center; }
     main .container .habitacion__izquierda .hab__texto h3 {
       color: black;
-      font-size: 50px; }
+      font-size: 35px; }
 
 main .container .habitacion__derecha {
   position: relative;
@@ -315,7 +315,7 @@ main .container .habitacion__derecha {
     align-items: center; }
     main .container .habitacion__derecha .hab__texto h3 {
       color: black;
-      font-size: 50px; }
+      font-size: 35px; }
 
 @media screen and (min-width: 900px) {
   main .container .texto__titulo h1 {
@@ -339,7 +339,7 @@ main .texto__titulo {
 main .container .cont1 .restaurante__texto1 {
   border-bottom: 2px solid #d12c2c; }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   main .texto__titulo h1 {
     font-size: 45px; }
   main .container .cont1 .restaurante__texto1 {
