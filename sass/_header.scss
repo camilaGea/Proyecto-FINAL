@@ -124,7 +124,7 @@ header {
                         border-radius: 5px;
                         padding: 5px;
                         &:hover {
-                            background-color: map-get($colores , colorT);
+                            background-color: map-get($colores , colorP);
                             color: map-get($colores , colorS );
                         } 
                     }

@@ -51,7 +51,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #d12c2c; }
+    background-color: #de0a26; }
     header .navegador__menu ul {
       display: flex;
       flex-direction: column;
@@ -97,7 +97,7 @@ header {
           border-radius: 5px;
           padding: 5px; }
           header .navegador__menu ul li a:hover {
-            background-color: #d12c2c;
+            background-color: #ff0022;
             color: white; }
       header .navegador__menu .cerrar__menu {
         display: none; } }
@@ -236,7 +236,7 @@ main .texto__titulo {
     text-transform: uppercase;
     font-size: 2.5rem;
     font-family: 'Bebas Neue', cursive;
-    border-bottom: 0.5rem solid #ff0022; }
+    border-bottom: 0.5rem solid #de0a26; }
 
 main .nosotros__uno {
   width: 80%;
@@ -280,7 +280,7 @@ main .container .texto__titulo {
     text-transform: uppercase;
     font-size: 2.5rem;
     font-family: 'Bebas Neue', cursive;
-    border-bottom: 0.5rem solid #ff0022; }
+    border-bottom: 0.5rem solid #de0a26; }
 
 main .container .habitacion__izquierda {
   position: relative;
@@ -341,19 +341,19 @@ main .texto__titulo {
     text-transform: uppercase;
     font-size: 2.5rem;
     font-family: 'Bebas Neue', cursive;
-    border-bottom: 0.5rem solid #ff0022; }
+    border-bottom: 0.5rem solid #de0a26; }
 
 main .container .cont1 .restaurante__texto1 {
-  border-bottom: 2px solid #d12c2c; }
+  border-bottom: 2px solid #de0a26; }
 
 @media screen and (min-width: 992px) {
   main .texto__titulo h1 {
     font-size: 45px; }
   main .container .cont1 .restaurante__texto1 {
-    border-left: 2px solid #d12c2c;
+    border-left: 2px solid #de0a26;
     border-bottom: none; }
   main .container .cont2 .restaurante__texto2 {
-    border-right: 2px solid #d12c2c; } }
+    border-right: 2px solid #de0a26; } }
 
 /* RESERVA */
 main .reserva__formulario {
@@ -368,7 +368,7 @@ main .reserva__formulario {
       text-transform: uppercase;
       font-size: 2.5rem;
       font-family: 'Bebas Neue', cursive;
-      border-bottom: 0.5rem solid #ff0022; }
+      border-bottom: 0.5rem solid #de0a26; }
   main .reserva__formulario .formulario__reserva {
     margin: 20px 5px;
     display: grid;
