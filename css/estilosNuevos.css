@@ -77,6 +77,8 @@ header {
 @media screen and (min-width: 900px) {
   header {
     height: 5rem; }
+    header .header__logo {
+      height: 5rem; }
     header .mostrar__menu {
       display: none; }
     header .navegador__menu {
@@ -88,7 +90,8 @@ header {
       height: 90%; }
       header .navegador__menu ul {
         flex-direction: row;
-        justify-content: space-evenly; }
+        justify-content: space-evenly;
+        margin-bottom: 0; }
         header .navegador__menu ul li a {
           color: black;
           border-radius: 5px;
