@@ -25,7 +25,7 @@ header {
       padding: 5px;
       font-size: 1.5rem;
       text-decoration: none;
-      color: #de0a26;
+      color: #ff0022;
       font-family: 'Monoton', cursive; }
   header .mostrar__menu {
     display: flex;
@@ -34,7 +34,7 @@ header {
     width: 2.5rem;
     height: 2.5rem;
     font-size: 2rem;
-    background-color: #de0a26;
+    background-color: #ff0022;
     color: white;
     cursor: pointer;
     border: none; }
@@ -105,7 +105,7 @@ header {
 /* footer */
 footer {
   height: 10rem;
-  background-color: #de0a26;
+  background-color: #ff0022;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -143,7 +143,7 @@ footer {
       width: 4rem;
       height: 4rem; }
       footer .footer__redes a:hover {
-        color: #de0a26;
+        color: #ff0022;
         background-color: white;
         transform: scale(0.8); } }
 
@@ -187,16 +187,17 @@ main .home__bienvenido {
     justify-content: center;
     text-align: center; }
     main .home__bienvenido .contenido__bienvenido h3 {
-      color: #d12c2c; }
+      text-transform: uppercase;
+      color: #ff0022; }
 
 main .home__servicios {
   width: 100%;
   height: 100%;
-  background-color: #d12c2c; }
+  background-color: #ff0022; }
   main .home__servicios .servicio__titulo {
-    padding: 20px;
-    height: 50px; }
+    padding: 15px; }
     main .home__servicios .servicio__titulo h3 {
+      text-transform: uppercase;
       color: white;
       text-align: center; }
   main .home__servicios .contenido__servicios {
@@ -205,23 +206,26 @@ main .home__servicios {
     justify-content: space-between;
     align-content: center;
     text-align: center;
-    padding: 40px 40px 0px 40px; }
+    padding: 30px; }
     main .home__servicios .contenido__servicios .servicio {
-      margin: 20px 0; }
-      main .home__servicios .contenido__servicios .servicio h3 {
-        color: white;
+      margin: 20px 0;
+      padding: 15px;
+      background-color: white;
+      border-radius: 15px; }
+      main .home__servicios .contenido__servicios .servicio p {
+        color: black;
         font-size: 20px; }
       main .home__servicios .contenido__servicios .servicio i {
-        color: white;
+        color: #de0a26;
         font-size: 50px;
         margin-bottom: 20px; }
 
 @media screen and (min-width: 900px) {
   main .home__servicios .contenido__servicios {
-    flex-direction: row;
-    padding: 50px 50px 50px 50px; }
+    flex-direction: row; }
     main .home__servicios .contenido__servicios .servicio {
-      margin: 0px 10px; } }
+      margin: 0px 10px;
+      width: 25%; } }
 
 /* NOSOTROS */
 main .texto__titulo {
@@ -232,7 +236,7 @@ main .texto__titulo {
     text-transform: uppercase;
     font-size: 2.5rem;
     font-family: 'Bebas Neue', cursive;
-    border-bottom: 0.5rem solid #de0a26; }
+    border-bottom: 0.5rem solid #ff0022; }
 
 main .nosotros__uno {
   width: 80%;
@@ -276,7 +280,7 @@ main .container .texto__titulo {
     text-transform: uppercase;
     font-size: 2.5rem;
     font-family: 'Bebas Neue', cursive;
-    border-bottom: 0.5rem solid #de0a26; }
+    border-bottom: 0.5rem solid #ff0022; }
 
 main .container .habitacion__izquierda {
   position: relative;
@@ -337,7 +341,7 @@ main .texto__titulo {
     text-transform: uppercase;
     font-size: 2.5rem;
     font-family: 'Bebas Neue', cursive;
-    border-bottom: 0.5rem solid #de0a26; }
+    border-bottom: 0.5rem solid #ff0022; }
 
 main .container .cont1 .restaurante__texto1 {
   border-bottom: 2px solid #d12c2c; }
@@ -364,7 +368,7 @@ main .reserva__formulario {
       text-transform: uppercase;
       font-size: 2.5rem;
       font-family: 'Bebas Neue', cursive;
-      border-bottom: 0.5rem solid #de0a26; }
+      border-bottom: 0.5rem solid #ff0022; }
   main .reserva__formulario .formulario__reserva {
     margin: 20px 5px;
     display: grid;
@@ -377,7 +381,7 @@ main .reserva__formulario {
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
     main .reserva__formulario .formulario__reserva .formu__input {
       border: none;
-      border-bottom: 2px solid #de0a26;
+      border-bottom: 2px solid #ff0022;
       border-radius: 20px;
       padding: 7px;
       margin-top: 5px; }
@@ -396,11 +400,11 @@ main .reserva__formulario {
         justify-self: center;
         border-radius: 5px;
         color: white;
-        background-color: #de0a26; }
+        background-color: #ff0022; }
       main .reserva__formulario .formulario__reserva .botones .boton__limpiar {
-        color: #de0a26;
+        color: #ff0022;
         background-color: white;
-        border-color: #de0a26; }
+        border-color: #ff0022; }
 
 @media screen and (min-width: 900px) {
   main .reserva__formulario .titulo__reserva {
@@ -414,5 +418,5 @@ main .reserva__formulario {
     width: 5rem; }
     main .reserva__formulario .formulario__reserva .botones .btn:hover, main .reserva__formulario .formulario__reserva .botones .boton__limpiar:hover {
       background-color: white;
-      color: #de0a26;
-      border-color: #de0a26; } }
+      color: #ff0022;
+      border-color: #ff0022; } }
